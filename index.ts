@@ -1,1 +1,3 @@
-export * from './src/posapp_emisys';
+import emisys from "./src/posapp_emisys";
+
+export default emisys;
