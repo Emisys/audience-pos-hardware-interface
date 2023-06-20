@@ -1,8 +1,8 @@
 import EmisysNfcReader from './posapp_emisys/EmisysNfcReader';
 import EmisysSystem from './posapp_emisys/EmisysSystem';
 import EmisysPrinter from './posapp_emisys/EmisysPrinter';
-import EmisysTerminal from './posapp_emisys/EmisysTerminal';
-import EmisysVivawallet from './posapp_emisys/EmisysVivawallet';
+import EmisysTerminal, {EmisysTerminalSaleStatus} from './posapp_emisys/EmisysTerminal';
+import EmisysVivawallet, { EmisysVivawalletPosSaleStatus } from './posapp_emisys/EmisysVivawallet';
 import EmisysVivawalletPos from './posapp_emisys/EmisysVivawalletPos';
 
 import { EmisysVivawalletSaleStatus } from "./posapp_emisys/EmisysVivawallet";
@@ -24,5 +24,6 @@ declare namespace emisys {
   const vivawalletPos: EmisysVivawalletPos;
 
   export type EmisysVivawalletSaleStatusType = EmisysVivawalletSaleStatus;
-  export type TestType = "TEST" | "LAAAAAA";
+  export type EmisysVivawalletPosSaleStatusType = EmisysVivawalletPosSaleStatus;
+  export type EmisysTerminalSaleStatusType = EmisysTerminalSaleStatus;
 }
