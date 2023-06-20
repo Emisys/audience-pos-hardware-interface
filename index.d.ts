@@ -13,12 +13,12 @@ declare namespace emisys {
    * that global variable. Therefore, care must be taken to ensure it exists.
    */
 
-  const nfcReader: EmisysNfcReader;
-  const system: EmisysSystem;
-  const printer: EmisysPrinter;
-  const terminal: EmisysTerminal;
-  const vivawallet: EmisysVivawallet;
-  const vivawalletPos: EmisysVivawalletPos;
+  export const nfcReader: EmisysNfcReader;
+  export const system: EmisysSystem;
+  export const printer: EmisysPrinter;
+  export const terminal: EmisysTerminal;
+  export const vivawallet: EmisysVivawallet;
+  export const vivawalletPos: EmisysVivawalletPos;
 }
 
 export default emisys;
