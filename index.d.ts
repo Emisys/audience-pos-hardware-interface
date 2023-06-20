@@ -6,6 +6,7 @@ import EmisysVivawallet from './posapp_emisys/EmisysVivawallet';
 import EmisysVivawalletPos from './posapp_emisys/EmisysVivawalletPos';
 
 import { EmisysVivawalletSaleStatus } from "./posapp_emisys/EmisysVivawallet";
+export = emisys;
 
 declare namespace emisys {
   /**
@@ -25,5 +26,3 @@ declare namespace emisys {
   export type EmisysVivawalletSaleStatusType = EmisysVivawalletSaleStatus;
   export type TestType = "TEST" | "LAAAAAA";
 }
-
-export default emisys;
