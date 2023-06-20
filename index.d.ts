@@ -5,6 +5,8 @@ import EmisysTerminal from './posapp_emisys/EmisysTerminal';
 import EmisysVivawallet from './posapp_emisys/EmisysVivawallet';
 import EmisysVivawalletPos from './posapp_emisys/EmisysVivawalletPos';
 
+import { EmisysVivawalletSaleStatus } from "./posapp_emisys/EmisysVivawallet";
+
 declare namespace emisys {
   /**
    * Global variable injected in the javascript code by posapp.
@@ -13,12 +15,14 @@ declare namespace emisys {
    * that global variable. Therefore, care must be taken to ensure it exists.
    */
 
-  export const nfcReader: EmisysNfcReader;
-  export const system: EmisysSystem;
-  export const printer: EmisysPrinter;
-  export const terminal: EmisysTerminal;
-  export const vivawallet: EmisysVivawallet;
-  export const vivawalletPos: EmisysVivawalletPos;
+  const nfcReader: EmisysNfcReader;
+  const system: EmisysSystem;
+  const printer: EmisysPrinter;
+  const terminal: EmisysTerminal;
+  const vivawallet: EmisysVivawallet;
+  const vivawalletPos: EmisysVivawalletPos;
+
+  export type EmisysVivawalletSaleStatusInterface = EmisysVivawalletSaleStatus;
 }
 
 export default emisys;
