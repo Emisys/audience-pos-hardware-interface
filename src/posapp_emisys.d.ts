@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import EmisysNfcReader from './posapp_emisys/EmisysNfcReader';
 import EmisysSystem from './posapp_emisys/EmisysSystem';
 import EmisysPrinter from './posapp_emisys/EmisysPrinter';
