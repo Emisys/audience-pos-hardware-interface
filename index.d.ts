@@ -22,7 +22,8 @@ declare namespace emisys {
   const vivawallet: EmisysVivawallet;
   const vivawalletPos: EmisysVivawalletPos;
 
-  export type EmisysVivawalletSaleStatusInterface = EmisysVivawalletSaleStatus;
+  export type EmisysVivawalletSaleStatusType = EmisysVivawalletSaleStatus;
+  export type TestType = "TEST" | "LAAAAAA";
 }
 
 export default emisys;
