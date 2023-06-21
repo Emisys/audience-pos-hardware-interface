@@ -14,7 +14,7 @@ export interface EmisysVivawalletSaleStatus {
    */
   saleId?: number;
   /**
-   * Masket card number such as 479275******9999.
+   * Masked card number such as 479275******9999.
    */
   cardNumber?: string;
   /**
@@ -130,7 +130,7 @@ export interface EmisysVivawalletPosSaleStatus {
    */
   tid?: string;
   /**
-   * Masket card number such as 479275******9999.
+   * Masked card number such as 479275******9999.
    */
   accountNumber?: string;
   /**
