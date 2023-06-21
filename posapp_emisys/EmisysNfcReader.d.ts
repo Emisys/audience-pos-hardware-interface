@@ -160,7 +160,7 @@ export default class EmisysNfcReader {
    * Set the encryption key used to derive access codes to read and write on the nfc card.
    * @param password
    * @param iterations Number of iterations for Argon2d. Default is 2.
-   * @param memory Memory used by argon2d. Default is 10Mo.
+   * @param memory Memory used by argon2d. Default is 10MB.
    * @param threads Number of threads to use to encrypt the password with argon. Default is 4.
    */
   setEncryptionData(
