@@ -1,5 +1,5 @@
 {
-  "name": "audience-wrapper-contracts",
-  "version": "1.0.0",
-  "private": true
+  "name": "audience-pos-hardware-interface",
+  "version": "0.0.2",
+  "private": false
 }
