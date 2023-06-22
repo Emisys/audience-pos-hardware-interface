@@ -1,4 +1,4 @@
-# Audience wrapper contracts
+# Audience Pos hardware interface
 
 Provide the global variable injected in the Point of Sale website by the native wrapper application
 
