@@ -1,6 +1,9 @@
 {
-  "license": "UNLICENSED",
   "name": "audience-pos-hardware-interface",
   "version": "0.0.4",
-  "private": false
+  "description": "Provide the global variable injected in the Point of Sale website by the native wrapper application",
+  "repository": "https://github.com/Emisys/audience-pos-hardware-interface.git",
+  "homepage": "https://github.com/Emisys/audience-pos-hardware-interface",
+  "author": "Emisys Team <support-tech@emisys.com>",
+  "license": "UNLICENSED"
 }
