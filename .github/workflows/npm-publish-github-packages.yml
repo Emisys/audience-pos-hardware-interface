@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  publish-gpr:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: yarn install
-      - run: yarn publish
+          scope: '@repository-owner'
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
