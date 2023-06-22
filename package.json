@@ -7,6 +7,6 @@
   "author": "Emisys Team <support-tech@emisys.com>",
   "license": "UNLICENSED",
   "publishConfig": {
-   "registry": "https://npm.pkg.github.com/"
+  "registry": "https://npm.pkg.github.com/"
  }
 }
