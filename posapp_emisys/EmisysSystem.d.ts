@@ -34,17 +34,17 @@ export default class EmisysSystem {
    * @deprecated Superseded with computer.getComputerName()
    * Get the computer name. It can possibly be overridden from the command line to pass one computer as another.
    */
-  getComputerName(): string;
+  getComputerName(): string | null;
 
   /**
    * @deprecated Superseded with computer.getMacAddress()
    */
-  getMacAddress(): string;
+  getMacAddress(): string | null;
 
   /**
    * @deprecated Superseded with computer.getIpAddress()
    */
-  getIpAddress(): string;
+  getIpAddress(): string | null;
   computer?: EmisysSystemComputer;
 
   /**
