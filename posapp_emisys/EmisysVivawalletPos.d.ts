@@ -1,5 +1,6 @@
 export default class EmisysVivawalletPos {
-  startSale(amount: number, clientTransactionId: string): void;
+  startSale(clientTransactionId: string, amount: number,): void;
+  getTransactionDetails(clientTransactionId: string): void;
   pollingVivawalletResult(
     callback: (result: any) => void,
     number: number
