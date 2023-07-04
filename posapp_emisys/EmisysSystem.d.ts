@@ -98,4 +98,10 @@ export default class EmisysSystem {
    * coping with the web page.
    */
   simulation?: boolean;
+
+  /**
+   * Put or remove android kiosk mode depending on the param.
+   * @param isActive {Boolean}
+   */
+  setKioskMode(isActive: boolean);
 }
