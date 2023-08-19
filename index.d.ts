@@ -4,6 +4,7 @@ import EmisysPrinter from './posapp_emisys/EmisysPrinter';
 import EmisysTerminal, {EmisysTerminalSaleStatus} from './posapp_emisys/EmisysTerminal';
 import EmisysVivawallet, { EmisysVivawalletPosSaleStatus } from './posapp_emisys/EmisysVivawallet';
 import EmisysVivawalletPos from './posapp_emisys/EmisysVivawalletPos';
+import EmisysLogsManager from "./posapp_emisys/EmisysLogsManager";
 
 import { EmisysVivawalletSaleStatus } from "./posapp_emisys/EmisysVivawallet";
 export = emisys;
@@ -22,6 +23,7 @@ declare namespace emisys {
   const terminal: EmisysTerminal;
   const vivawallet: EmisysVivawallet;
   const vivawalletPos: EmisysVivawalletPos;
+  const logsManager: EmisysLogsManager;
 
   export type EmisysVivawalletSaleStatusType = EmisysVivawalletSaleStatus;
   export type EmisysVivawalletPosSaleStatusType = EmisysVivawalletPosSaleStatus;
