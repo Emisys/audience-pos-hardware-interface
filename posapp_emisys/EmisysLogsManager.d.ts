@@ -28,10 +28,4 @@ export default class EmisysLogsManager {
    * @return LogsModel[]
    */
   getLogs(): LogsModel[];
-
-  /**
-   * Return cordova logs array
-   * @return LogsModel[]
-   */
-  getCordovaLogs(): LogsModel[]
 }
