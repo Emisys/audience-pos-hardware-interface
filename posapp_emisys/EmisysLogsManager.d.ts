@@ -1,5 +1,5 @@
 declare interface LogsModel {
-  dateTime: Date;
+  dateTime: string;
   type: 'info'|'warning'|'error';
   message: string;
 }
