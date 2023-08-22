@@ -24,8 +24,8 @@ export default class EmisysLogsManager {
   addError(message: string,): void;
 
   /**
-   * Return logs array
-   * @return LogsModel[]
+   * Return logs LogsModel[] in string format
+   * @return string
    */
-  getLogs(): LogsModel[];
+  getLogs(): string;
 }
