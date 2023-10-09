@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 
-interface EmisysVivwalletSaleCallback {
+interface EmisysVivawalletSaleCallback {
   (status: EmisysVivawalletSaleStatus): void;
 }
 
@@ -143,7 +143,7 @@ export interface EmisysVivawalletPosSaleStatus {
   message: string;
 }
 
-interface EmisysVivawalletAbordCallback {
+interface EmisysVivawalletAbortCallback {
   (): void;
 }
 
@@ -160,16 +160,16 @@ export default class EmisysVivawallet {
     amount: number,
     saleId: number,
     identification: string,
-    callback: EmisysVivwalletSaleCallback
+    callback: EmisysVivawalletSaleCallback
   ): boolean;
 
   refund(
     refNum: number,
     saleId: number,
     identification: string,
-    callback: EmisysVivwalletSaleCallback,
+    callback: EmisysVivawalletSaleCallback,
     amount: number
   ): boolean;
 
-  abort(callback: EmisysVivawalletAbordCallback);
+  abort(callback: EmisysVivawalletAbortCallback);
 }
