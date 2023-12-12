@@ -9,6 +9,25 @@ interface EmisysStartPageResponse {
   scaleY: number;
 }
 
+interface ServerPrintCommand {
+  type: string;
+  color: string;
+  background?: string;
+  size: number;
+  weight: number;
+  dir: number;
+  name: string;
+  box: string;
+  align?: string;
+  text: string;
+  image: string;
+  thickness: string;
+  action: string;
+  x0: number;
+  y0: string;
+  ecl: number;
+}
+
 export default class EmisysPrinter {
   /**
    * @param [printer] Printer number to configure. Default is printer 0.
@@ -108,4 +127,10 @@ export default class EmisysPrinter {
     text: string,
     errorCorrectionLevel?: number
   ): boolean;
+
+  /**
+   * Store server print command information
+   * @param commands
+   */
+  setCommands(commands: ServerPrintCommand): void;
 }
