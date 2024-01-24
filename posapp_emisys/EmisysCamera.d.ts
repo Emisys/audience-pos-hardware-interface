@@ -1,4 +1,3 @@
-
 export default class EmisysCamera {
   /**
    * Open barcode scanner
