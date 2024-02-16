@@ -104,4 +104,14 @@ export default class EmisysSystem {
    * @param isActive {Boolean}
    */
   setKioskMode(isActive: boolean);
+
+  /**
+   * Display success image on screen (Telpo M8 mainly)
+   */
+  showPaymentSuccess();
+
+  /**
+   * Display error image on screen (Telpo M8 mainly)
+   */
+  showPaymentError(isActive: boolean);
 }
