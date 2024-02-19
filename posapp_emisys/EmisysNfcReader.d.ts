@@ -244,4 +244,14 @@ export default class EmisysNfcReader {
   syncLogMessage(messageId: number, syncDate: Date): boolean;
   getKeyToSync(limit: number): EncryptionKey[];
   syncKey(keyId: number, syncDate: Date): boolean;
+
+  /**
+   * Display success image on screen (Telpo M8 mainly)
+   */
+  showPaymentSuccess();
+
+  /**
+   * Display error image on screen (Telpo M8 mainly)
+   */
+  showPaymentError();
 }
