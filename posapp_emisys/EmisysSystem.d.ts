@@ -113,5 +113,5 @@ export default class EmisysSystem {
   /**
    * Display error image on screen (Telpo M8 mainly)
    */
-  showPaymentError(isActive: boolean);
+  showPaymentError();
 }
