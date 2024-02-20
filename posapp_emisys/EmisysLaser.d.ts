@@ -7,5 +7,10 @@ export default class EmisysLaser {
   /**
    * Get scanned barcode to display balance
    */
-  getBarcodeBalanceScanned(): string;
+  getBarcodeScannedBalance(): string;
+
+  /**
+   * Get scanned barcode for cashless payment
+   */
+  getBarcodeScannedPayment(): string;
 }
