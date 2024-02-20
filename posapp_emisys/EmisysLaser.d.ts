@@ -2,15 +2,10 @@ export default class EmisysLaser {
   /**
    * Init laser listener
    */
-  initBarcodeScannedListener(): void;
+  initScannedBarcodeListener(): void;
 
   /**
-   * Get scanned barcode to display balance
+   * Get scanned barcode
    */
-  getBarcodeScannedBalance(): string;
-
-  /**
-   * Get scanned barcode for cashless payment
-   */
-  getBarcodeScannedPayment(): string;
+  getScannedBarcode(): string;
 }
