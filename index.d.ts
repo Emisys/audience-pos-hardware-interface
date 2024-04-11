@@ -7,7 +7,7 @@ import EmisysVivawalletPos from './posapp_emisys/EmisysVivawalletPos';
 import EmisysLogsManager from "./posapp_emisys/EmisysLogsManager";
 import EmisysCamera from "./posapp_emisys/EmisysCamera";
 import EmisysLaser from "./posapp_emisys/EmisysLaser";
-
+import EmisysBluetoothPrinter from "./posapp_emisys/EmisysBluetoothPrinter";
 import { EmisysVivawalletSaleStatus } from "./posapp_emisys/EmisysVivawallet";
 export = emisys;
 
@@ -22,6 +22,7 @@ declare namespace emisys {
   const nfcReader: EmisysNfcReader;
   const system: EmisysSystem;
   const printer: EmisysPrinter;
+  const bluetoothPrinter: EmisysBluetoothPrinter;
   const terminal: EmisysTerminal;
   const vivawallet: EmisysVivawallet;
   const vivawalletPos: EmisysVivawalletPos;
