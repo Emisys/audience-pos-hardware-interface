@@ -104,4 +104,9 @@ export default class EmisysSystem {
    * @param isActive {Boolean}
    */
   setKioskMode(isActive: boolean);
+
+  /**
+   * Get the operating system of the device.
+   */
+  getOperatingSystem(): string | null;
 }
