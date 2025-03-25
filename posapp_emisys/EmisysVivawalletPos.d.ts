@@ -7,4 +7,5 @@ export default class EmisysVivawalletPos {
     callback: (result: any) => void,
     number: number
   ): void;
+  startPosActivation(clientId : string, secret: string): void;
 }
