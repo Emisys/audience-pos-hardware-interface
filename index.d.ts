@@ -18,17 +18,16 @@ declare namespace emisys {
    * It is only available when the code is running in posapp. Code running in a standard browser doesn't have
    * that global variable. Therefore, care must be taken to ensure it exists.
    */
-
-  const nfcReader: EmisysNfcReader;
-  const system: EmisysSystem;
-  const printer: EmisysPrinter;
-  const bluetoothPrinter: EmisysBluetoothPrinter;
-  const terminal: EmisysTerminal;
-  const vivawallet: EmisysVivawallet;
-  const vivawalletPos: EmisysVivawalletPos;
-  const logsManager: EmisysLogsManager;
-  const camera: EmisysCamera;
-  const laser: EmisysLaser;
+  static const nfcReader: EmisysNfcReader;
+  static const system: EmisysSystem;
+  static const printer: EmisysPrinter;
+  static const bluetoothPrinter: EmisysBluetoothPrinter;
+  static const terminal: EmisysTerminal;
+  static const vivawallet: EmisysVivawallet;
+  static const vivawalletPos: EmisysVivawalletPos;
+  static const logsManager: EmisysLogsManager;
+  static const camera: EmisysCamera;
+  static const laser: EmisysLaser;
 
   export type EmisysVivawalletSaleStatusType = EmisysVivawalletSaleStatus;
   export type EmisysVivawalletPosSaleStatusType = EmisysVivawalletPosSaleStatus;
