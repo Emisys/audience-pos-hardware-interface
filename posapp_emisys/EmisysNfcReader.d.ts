@@ -76,7 +76,7 @@ declare interface EncryptionKey {
   date: Date;
 }
 
- export interface EmisysNfcReader {
+export interface EmisysNfcReader {
     noLed: number;
     redLed: number;
     greenLed: number;
@@ -181,7 +181,7 @@ declare interface EncryptionKey {
      * Set key to encrypt NFC sectors.
      * @param cardUid
      * @param sector
-     * @param key 6-byte key stored as an hex string.
+     * @param key 6-byte key stored as a hex string.
      */
     setNfcKey(cardUid: string, sector: number, key: string): boolean;
 
@@ -219,7 +219,7 @@ declare interface EncryptionKey {
      * @param sectorList
      * @param randomData
      */
-    randomizeCardSectors(cardId, sectorList, randomData);
+    randomizeCardSectors(cardId, sectorList, randomData): void
 
     /**
      * @param cardType
@@ -241,7 +241,7 @@ declare interface EncryptionKey {
 
     writeCardSector(cardUid: string, sector: number, data: number[]): boolean;
 
-    setSectorStatus(cardUid: string, sector: number, status: string);
+    setSectorStatus(cardUid: string, sector: number, status: string): void;
 
     lastError(): LastError;
 
@@ -261,10 +261,15 @@ declare interface EncryptionKey {
     /**
      * Display success image on screen (Telpo M8 mainly)
      */
-    showPaymentSuccess();
+    showPaymentSuccess(): void;
 
     /**
      * Display error image on screen (Telpo M8 mainly)
      */
-    showPaymentError();
-  }
+    showPaymentError(): void;
+
+    /**
+     * Restart the NFC reader after any operation that pauses the NFC reader: vivawallet payment, camera scan, etc.
+     */
+    restartNfc(): void;
+}
