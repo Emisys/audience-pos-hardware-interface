@@ -5,6 +5,11 @@ export default class EmisysCamera {
   openBarcodeScanner(): void;
 
   /**
+   * Open barcode scanner
+   */
+  closeBarcodeScanner(): void;
+
+  /**
    * Get barcode scanned
    */
   getBarcodeScanned(): string;
