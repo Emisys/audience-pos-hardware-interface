@@ -112,9 +112,10 @@ export default class EmisysSystem {
 
   /**
    * Ask if an application is installed on the device.
-   * @param url
+   * @param urlAndroid The URL to open the application on Android.
+   * @param urlIOS The URL to open the application on iOS.
    */
-  askIfAppIsInstalled(url: string): void;
+  askIfAppIsInstalled(urlAndroid: string, urlIOS: string): void;
 
   /**
    * Return true if the application is installed on the device.
