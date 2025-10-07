@@ -9,4 +9,6 @@ export default class EmisysVivawalletPos {
   ): void;
   startPosActivation(url: string): void;
   startPosReset(url: string): void;
+  askIfVivaAppInstalled(url: string): void;
+  isVivaAppInstalled(): boolean;
 }
