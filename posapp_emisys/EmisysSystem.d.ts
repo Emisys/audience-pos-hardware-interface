@@ -109,4 +109,15 @@ export default class EmisysSystem {
    * Get the operating system of the device.
    */
   getOperatingSystem(): string | null;
+
+  /**
+   * Ask if an application is installed on the device.
+   * @param url
+   */
+  askIfAppIsInstalled(url: string): void;
+
+  /**
+   * Return true if the application is installed on the device.
+   */
+  isAppInstalled(): boolean;
 }
